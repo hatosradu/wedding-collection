@@ -1,17 +1,3 @@
-<div class="upload-container">
-  <h2>Upload Photos</h2>
-
-  <label>
-    Folder Name:
-    <input type="text" [(ngModel)]="folderName" />
-  </label>
-
-  <label>
-    Select Photos:
-    <input type="file" (change)="onFilesSelected($event)" multiple />
-  </label>
-
-  <button (click)="uploadFiles()">Upload</button>
-
-  <p>{{ uploadStatus }}</p>
+<div class="app-container">
+  <router-outlet></router-outlet>
 </div>
