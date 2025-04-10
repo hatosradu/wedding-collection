@@ -3,6 +3,7 @@ import { LoginComponent } from './features/login/login.component';
 import { UploadComponent } from './features/upload/upload.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   {
     path: 'login',
     component: LoginComponent,
@@ -14,5 +15,6 @@ export const routes: Routes = [
   {
     path: '**',
     redirectTo: 'login',
+    pathMatch: 'full',
   },
 ];
