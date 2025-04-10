@@ -1,24 +1,26 @@
 .login-container {
-  height: 100svh;
+  height: 100%;
   width: 100%;
   display: flex;
   overflow: hidden;
-  background-image: url("/background.jpeg");
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
+
 .login-title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
   text-align: center;
+
+  margin-bottom: 80%;
 }
 
 .login-button {
-  width: 80%;
+  width: 100%;
   padding: 6px 12px;
   font-size: 18px;
   background-color: #1f5930;
@@ -33,18 +35,16 @@
 }
 
 input {
-  width: 80%;
+  width: 100%;
   padding: 6px 12px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
   border-radius: 4px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 input:focus {
@@ -53,4 +53,9 @@ input:focus {
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
 }

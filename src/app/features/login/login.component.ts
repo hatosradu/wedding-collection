@@ -12,6 +12,13 @@ export class LoginComponent {
   private router: Router = inject(Router);
   public email: FormControl<string | null> = new FormControl(null);
 
+  constructor() {
+    const currentUser : string | null = sessionStorage.getItem('user');
+    if (currentUser != null) {
+      this.router.navigate(['/', 'upload']);
+    }
+  }
+
   continue() {
     const user = this.email.getRawValue()?.toString();
     if (user) {

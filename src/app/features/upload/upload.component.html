@@ -1,1 +1,8 @@
-<p>upload works!</p>
+<div class="upload-container">
+    <input type="file" id="upload" hidden (change)="onFilesSelected($event)" multiple accept="image/*,video/*" />
+    <label for="upload">Încarcă poze.</label>
+</div>
+
+<div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+</div>
